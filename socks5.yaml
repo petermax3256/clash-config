@@ -1,0 +1,24 @@
+proxies:
+  - name: "节点1"
+    type: socks5
+    server: gdhk3-08302045.666888.biz
+    port: 30130
+    username: wukxegcy
+    password: n3zs5t9lp19l
+
+  - name: "节点2"
+    type: socks5
+    server: gdhk3-08302045.666888.biz
+    port: 13564
+    username: wukxegcy
+    password: n3zs5t9lp19l
+
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - 节点1
+      - 节点2
+
+rules:
+  - MATCH,Proxy
